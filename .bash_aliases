@@ -29,13 +29,15 @@ alias vpu='vagrant snapshot push'
 alias vpp='vagrant snapshot pop'
 ## start vagrant
 alias vu='vagrant up'
-
+## vagrant destroy
+alias vd='vagrant destroy --force'
 # ----------------------
 # Git Aliases
 # ----------------------
 alias ga='git add'
 alias gaa='git add --all'
 alias gb='git branch'
+alias gba='git branch --all'
 alias gbd='git branch --delete '
 alias gc='git commit'
 alias gcm='git commit --message'
