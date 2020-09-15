@@ -69,4 +69,4 @@ let g:lightline = {
       \ 'colorscheme': 'onedark',
       \ }
 map <C-o> :NERDTreeToggle<CR>
-map <C-W> :StripWhitespace<CR>
+map <C-e> :StripWhitespace<CR>
