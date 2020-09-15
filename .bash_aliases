@@ -1,25 +1,36 @@
+# ---------------------
+# System Aliases
+# ---------------------
+
 # alias lookup cat bash_alias
 alias al='cat ~/.bash_aliases'
-
 # sort by file size
 alias lt='ls --human-readable --size -1 -S --classify'
-
 # find command in grep history
-alias gh='history|grep'
-
+alias ghist='history|grep'
 # sort by modification time
 alias left='ls -t -l'
-
 # count files in directory
 alias count='find . -type f | wc -l'
-
 # create python virtual environment
 alias ve='python3 -m venv ./venv'
 alias va='source ./venv/bin/activate'
-
 # protect files from accidently being removed
 alias tcn='mv --force -t ~/.local/share/Trash'
-
+# df human readable
+alias df="df -Tha --total"
+# du human readable
+alias du="du -ach | sort -h"
+# free human readable
+alias free="free -mt"
+# ps human readable
+alias ps="ps auxf"
+# searchable process table
+alias psg="ps aux | grep -v grep | grep -i -e VSZ -e"
+# mkdir default
+alias mkdir="mkdir -pv"
+# wget default
+alias wget="wget -c"
 # ----------------------
 # Vagrant Aliases
 # ----------------------
