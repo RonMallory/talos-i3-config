@@ -2,6 +2,23 @@
 set number
 set laststatus=2
 set noshowmode
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+
+let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
+let g:ale_sign_error = '>>'
+let g:ale_sign_warning = '--'
+let g:ale_lint_on_text_changed = 'never'
+
 " Setting up Vundle - the vim plugin bundler
     let iCanHazVundle=1
     let vundle_readme=expand('~/.vim/bundle/vundle/README.md')
@@ -50,6 +67,8 @@ set noshowmode
     Plugin 'itchyny/lightline.vim'
     " https://github.com/ntpeters/vim-better-whitespace
     Plugin 'ntpeters/vim-better-whitespace'
+    " https://github.com/dense-analysis/ale
+    Plugin 'dense-analysis/ale'
     "...All your other bundles...
     if iCanHazVundle == 0
         echo "Installing Vundles, please ignore key map error messages"
