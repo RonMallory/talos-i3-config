@@ -83,5 +83,7 @@ alias gsts='git stash save'
 
 alias ap='ansible-playbook'
 alias ad='ansible-doc'
-
+alias ag='ansible-galaxy'
+alias alint='ansible-lint'
+alias ylint='yamllint'
 
