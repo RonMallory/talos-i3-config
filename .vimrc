@@ -2,6 +2,7 @@
 set number
 set laststatus=2
 set noshowmode
+set cursorline
 
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
@@ -18,7 +19,7 @@ let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
 let g:ale_sign_error = '>>'
 let g:ale_sign_warning = '--'
 let g:ale_lint_on_text_changed = 'never'
-
+let g:ale_ansible_ansible_lint_executable = 'ansible-lint'
 " Setting up Vundle - the vim plugin bundler
     let iCanHazVundle=1
     let vundle_readme=expand('~/.vim/bundle/vundle/README.md')
