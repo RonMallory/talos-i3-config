@@ -90,3 +90,12 @@ let g:lightline = {
       \ }
 map <C-o> :NERDTreeToggle<CR>
 map <C-e> :StripWhitespace<CR>
+
+if has("spell")
+  " turn spelling on by default
+  set spell
+
+  " toggle spelling with F4 key
+  map <F4> :set spell!<CR><Bar>:echo "Spell Check: " . strpart("OffOn", 3 * &spell, 3)<CR>
+
+endif
