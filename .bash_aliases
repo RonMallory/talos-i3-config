@@ -4,6 +4,7 @@
 
 # alias lookup cat bash_alias
 alias al='cat ~/.bash_aliases'
+alias alg='cat ~.bash_aliases |grep'
 # sort by file size
 alias lt='ls --human-readable --size -1 -S --classify'
 # find command in grep history
