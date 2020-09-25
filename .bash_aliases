@@ -32,20 +32,25 @@ alias psg="ps aux | grep -v grep | grep -i -e VSZ -e"
 alias mkdir="mkdir -pv"
 # wget default
 alias wget="wget -c"
+
 # ----------------------
 # Vagrant Aliases
 # ----------------------
+
 ## create a snapshot
-alias vpu='vagrant snapshot push'
+alias vspu='vagrant snapshot push'
 ## restore to snapshot
-alias vpp='vagrant snapshot pop'
+alias vspo='vagrant snapshot pop'
 ## start vagrant
 alias vu='vagrant up'
 ## vagrant destroy
 alias vd='vagrant destroy --force'
+## vagrant up and snapshot push
+alias vusp'vagrant up && snapshot push'
 # ----------------------
 # Git Aliases
 # ----------------------
+
 alias ga='git add'
 alias gaa='git add --all'
 alias gb='git branch'
@@ -79,7 +84,7 @@ alias gstp='git stash pop'
 alias gsts='git stash save'
 
 # ----------------------
-# Ansible Alias
+# Ansible Aliases
 # ----------------------
 
 alias ap='ansible-playbook'
@@ -87,4 +92,11 @@ alias ad='ansible-doc'
 alias ag='ansible-galaxy'
 alias alint='ansible-lint'
 alias ylint='yamllint'
+
+# ----------------------
+# Molecule Aliases
+# ----------------------
+
+alias mt='molecule test'
+alias mtd'molecule --debug test'
 
