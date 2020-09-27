@@ -46,7 +46,7 @@ alias vu='vagrant up'
 ## vagrant destroy
 alias vd='vagrant destroy --force'
 ## vagrant up and snapshot push
-alias vusp'vagrant up && snapshot push'
+alias vusp='vagrant up && snapshot push'
 # ----------------------
 # Git Aliases
 # ----------------------
@@ -98,5 +98,8 @@ alias ylint='yamllint'
 # ----------------------
 
 alias mt='molecule test'
-alias mtd'molecule --debug test'
+alias mtd='molecule --debug test'
+alias mc='molecule converge'
+alias mver='molecule verify'
+
 
