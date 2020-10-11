@@ -48,6 +48,8 @@ Plugin 'itchyny/lightline.vim'
 Plugin 'ntpeters/vim-better-whitespace'
 " https://github.com/dense-analysis/ale
 Plugin 'dense-analysis/ale'
+" https://github.com/ekalinin/Dockerfile.vim
+Plug 'ekalinin/Dockerfile.vim'
 "...All your other bundles...
 if iCanHazVundle == 0
     echo "Installing Vundles, please ignore key map error messages"

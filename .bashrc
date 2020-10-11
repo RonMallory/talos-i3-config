@@ -15,3 +15,7 @@ fi
 if [ -e $HOME/.kubectl_aliases ]; then
   source $HOME/.kubectl_aliases
 fi
+
+if [ -e $HOME/.docker_aliases ]; then
+  source $HOME/.docker_aliases
+fi

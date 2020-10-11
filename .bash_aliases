@@ -47,6 +47,7 @@ alias vu='vagrant up'
 alias vd='vagrant destroy --force'
 ## vagrant up and snapshot push
 alias vusp='vagrant up && snapshot push'
+
 # ----------------------
 # Git Aliases
 # ----------------------
@@ -82,6 +83,9 @@ alias gstd='git stash drop'
 alias gstl='git stash list'
 alias gstp='git stash pop'
 alias gsts='git stash save'
+alias gpruned='git prune remote origin --dry-run'
+alias gprune='git remote prune origin'
+alias gp='git push'
 
 # ----------------------
 # Ansible Aliases
@@ -101,5 +105,4 @@ alias mt='molecule test'
 alias mtd='molecule --debug test'
 alias mc='molecule converge'
 alias mver='molecule verify'
-
 
